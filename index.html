@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery_3.5.1.js"></script>
+    <script src="./js/common.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="headerhome">
+            <div class="headerGnb">
+                <h1><a href="./index.html"></a></h1>
+                <div class="util loginBefore">
+                    <a href="./login.html">로그인</a>
+                    <a href="./newaccount.html">회원가입</a>
+                </div>
+                <nav class="gnb">
+                    <ul>
+                        <li class="menu1">
+                            <a href="#" id="menu1">지켜주는 금융생활</a>
+                            <div class="subMenu menu1">
+                                <div class="subMnList">
+                                    <div class="sec">
+                                        <strong><a href="#">모으다</a></strong>
+                                        <ul>
+                                            <li><a href="#">소득 모아보기</a></li>
+                                            <li><a href="#">금융자산 모아보기</a></li>
+                                            <li><a href="#">주소 관리</a></li>
+                                            <li><a href="#">부동산 시세</a></li>
+                                            <li><a href="#">자동차 시세</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sec">
+                                        <strong><a href="#">쓰다</a></strong>
+                                        <ul>
+                                            <li><a href="#">소비현황</a></li>
+                                            <li><a href="#">내 또래와 소비 비교</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sec">
+                                        <strong><a href="#">빌리다</a></strong>
+                                        <ul>
+                                            <li><a href="#">대출현황</a></li>
+                                            <li><a href="#">DSR 계산기</a></li>
+                                            <li><a href="#">대출한도예측</a></li>
+                                            <li><a href="#">내 또래와 대출 비교</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sec">
+                                        <strong><a href="#">갚다</a></strong>
+                                        <ul class="sfbm">
+                                            <li><a href="#">카드/대출 연체방지</a></li>
+                                            <li><a href="#">연체현황</a></li>
+                                            <li><a href="#">채무조정내역</a></li>
+                                        </ul>
+                                        <strong><a href="#">아끼다</a></strong>
+                                        <ul>
+                                            <li><a href="#">대출이자 아끼기</a></li>
+                                            <li><a href="#">카드소비 아끼기</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sec">
+                                        <strong class="highLightWrap"><a href="#">금융진단</a></strong>
+                                        <ul>
+                                            <li>
+                                                <strong class="subTit"><a href="#">대출가능진단</a></strong>
+                                            </li>
+                                            <li>
+                                                <strong class="subTit"><a href="#">카드발급진단</a></strong>
+                                            </li>
+                                            <li>
+                                                <strong class="subTit"><a href="#">보험혜택진단</a></strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu2">
+                            <a href="#" id="menu2">키워주는 신용생활</a>
+                            <div class="subMenu menu2">
+                                <div class="subMnList">
+                                    <div class="sec">
+                                        <strong class="noLine"><a href="#">신용 한눈에 보기</a></strong>
+                                        <strong class="noLine"><a href="#">신용점수 예측하기</a></strong>
+                                    </div>
+                                    <div class="sec">
+
+                                        <strong class="noLine"><a href="#">NICE신용점수 올리기</a></strong>
+                                        <strong class="noLine"><a href="./creditlife.html">사장님 신용관리</a></strong>
+                                        <strong class="noLine"><a href="./creditcare.html">신용회복 케어</a></strong>
+                                    </div>
+                                    <div class="sec">
+                                        <strong class="noLine highLightWrap"><a href="#">지키미케어십</a></strong>
+                                        <strong><a href="./creditreport.html">신용보고서</a></strong>
+                                        <ul>
+                                            <li><a href="#">상품안내</a></li>
+                                            <li><a href="#">내 신용보고서 관리</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sec">
+                                        <strong class="noLine"><a href="#">케어십알림</a></strong>
+                                        <strong class="noLine"><a href="#">신용조회차단</a></strong>
+                                        <strong class="noLine"><a href="#">명의도용차단</a></strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu3">
+                            <a href="#" id="menu3">미소짓는 데이터생활</a>
+                            <div class="subMenu menu3">
+                                <div class="subMnList">
+                                    <div class="sec">
+                                        <strong><a href="#">데이터 놀이터</a></strong>
+                                        <ul>
+                                            <li>
+                                                <strong class="subTit"><a href="#">이름어때</a></strong>
+                                                <ul>
+                                                    <li><a href="#">이름분석</a></li>
+                                                    <li><a href="#">이름랭킹</a></li>
+                                                    <li><a href="#">이름추천</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong class="subTit"><a href="#">펫케어</a></strong>
+                                                <ul>
+                                                    <li><a href="#">반려동물 등록</a></li>
+                                                    <li><a href="#">나이계산기</a></li>
+                                                    <li><a href="#">이름추천</a></li>
+                                                    <li><a href="#">이름랭킹</a></li>
+                                                    <li><a href="#">색상랭킹</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong><a href="#">오늘의 운세</a></strong>
+                                            </li>
+                                            <li><a href="#">나이스실험실</a></li>
+                                            <li><a href="#">이벤트</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sec">
+                                        <strong class="noLine"><a href="#"
+                                                
+                                                title="새창열림">우리동네 상권분석</a></strong>
+                                        <strong>마이데이터 연결</strong>
+                                        <ul>
+                                            <li><a href="#">마이데이터 연결관리</a></li>
+                                            <li><a href="#">금융사 연결관리</a></li>
+                                            <li><a href="#">개인신용정보 전송내역</a></li>
+                                            <li><a href="#">마이데이터 해지</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sec">
+                                        <strong>소비자보호</strong>
+                                        <ul>
+                                            <li><a href="#">신용정보 이용제공내역</a></li>
+                                            <li><a href="#">개인신용정보 조회사실통지요청</a></li>
+
+
+                                            <li><a href="#">자동화평가결과 설명요구</a></li>
+
+
+                                            <li><a href="#">개인신용평점체계</a></li>
+                                            <li><a href="#">개인사업자신용등급체계</a></li>
+                                            <li><a href="#">법원/관보정보</a></li>
+                                            <li><a href="#">채권자 변동정보</a></li>
+                                            <li><a href="#">개인회생 신청정보</a></li>
+                                            <li><a href="#">연체정보 해제이력</a></li>
+                                            <li><a href="#">공공정보</a></li>
+                                            <li><a href="#">금융질서문란정보</a></li>
+                                            <li><a href="#">제휴사 신용관리 이용내역</a></li>
+                                            <li><a href="#">무료 신용조회</a></li>
+                                            <li><a href="#">금융소비자보호</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu4">
+                            <a href="#" id="menu4">관리/설정</a>
+                            <div class="subMenu menu4">
+                                <div class="subMnList">
+                                    <div class="sec">
+                                        <strong class="noLine"><a href="#">결제/서비스 이용내역</a></strong>
+                                        <strong class="noLine"><a href="#">지키미케어십 관리</a></strong>
+                                        <strong class="noLine"><a href="#">이용권 등록</a></strong>
+                                    </div>
+                                    <div class="sec">
+                                        <strong>내 정보 관리</strong>
+                                        <ul>
+                                            <li><a href="#">내 정보 변경</a></li>
+                                            <li><a href="#">로그인 설정</a></li>
+                                            <li><a href="#">마케팅 알림설정</a></li>
+                                            <li><a href="#">가족구성원 동의</a></li>
+                                            <li><a href="#">약관 및 서비스 이용 동의</a></li>
+                                            <li><a href="#">회원탈퇴</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sec">
+                                        <strong class="noLine"><a href="#">공동인증서 관리</a></strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu5">
+                            <a href="#" id="menu5">고객센터</a>
+                            <div class="subMenu menu5">
+                                <div class="subMnList">
+                                    <div class="sec">
+                                        <strong><a href="#">문의하기</a></strong>
+                                        <ul>
+                                            <li><a href="#">서비스문의</a></li>
+                                            <li><a href="#">신용상담신청</a></li>
+                                            <li><a href="#">자주하는 질문</a></li>
+                                            <li><a href="#">타인알림문자 수신거절</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sec">
+                                        <strong class="noLine"><a href="./customerservice.html">공지사항</a></strong>
+                                    </div>
+                                    <div class="sec">
+                                        <strong>이용안내</strong>
+                                        <ul>
+                                            <li><a href="#">이용가이드</a></li>
+                                            <li><a href="#">보안프로그램 설치안내</a></li>
+                                            <li><a href="#">원격지원안내</a></li>
+                                            <li><a href="#">약관 및 정책</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="headerSearch">
+                    <button type="button" class="btnSearch" role="button"><img src="./img/ico_header_search.png"
+                            alt="search"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>        
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide first"><h2>나는 얼마나 모았을까?<br>지키미에서 한 번에 확인!</h2><p>내 자산/소비/대출/연체 모두 확인</p></div>
+              <div class="swiper-slide second"><h2>나이스지키미에서<br>나의 진짜 신용점수 확인!</h2><p>금융기관에서 활용하는 NICE®신용점수</p></div>
+              <div class="swiper-slide third"><h2>내 운세는 어떨까?<br>지키미에서 운세 확인!</h2><p>오늘의 운세부터 올해의 운세까지</p></div>
+              <div class="swiper-slide forth"><h2>채무나 연체가 있다면?<br>지키미에서 신용회복 케어!</h2><p>나를 위한 맞춤 채무조정 솔루션</p></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+            
+            <section id="middle">
+                <h3>이런 서비스는 어떠세요?</h3>
+                <div class="serviceWrap">
+                    <ul>
+                        <a href="#">
+                            <div class="service1">
+                            </div>
+                            <li>신용 관리</li>
+                        </a><a href="#">
+                            <div class="service2">
+                            </div>
+                            <li>점수 올리기</li>
+                        </a><a href="#">
+                            <div class="service3">
+                            </div>
+                            <li>연체 방지</li>
+                        </a><a href="#">
+                            <div class="service4">
+                            </div>
+                            <li>지키미 케어십</li>
+                        </a><a href="#">
+                            <div class="service5">
+                            </div>
+                            <li>대출가능진단</li>
+                        </a><a href="#">
+                            <div class="service6">
+                            </div>
+                            <li>카드발급진단</li>
+                        </a><a href="#">
+                            <div class="service7">
+                            </div>
+                            <li>보험혜택진단</li>
+                        </a><a href="#">
+                            <div class="service8">
+                            </div>
+                            <li>이름어때</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="middlebar">
+                    <a href="#"> <div class="mid-bar-left"><p>내 신용으로 가능한 대출은?</p><div></div></div></a>
+                    <div class="mid-bar-right">
+                        <strong>OK저축은행 개인신용대출</strong>
+                        <span>내 대출 한도가 도착했습니다.</span>
+                        <span>지금 조회하기 ></span>
+                        <div class="dot"><a href=""></a><a href=""></a><a href=""></a></div>
+                    </div>
+                </div>
+
+                <div class="careWrap">
+                    <div class="care-des">
+                    <div class="care">
+                        <h3>내 정보를<br>지켜주는<br><span>지키미케어십<br>혜택</span></h3>
+                    </div>
+                    <div class="care-items-wrap">
+                        <a href=""><span>가족신용 관리</span><strong>우리 가족 신용까지<br>관리할 수 있어요</strong></a>
+                        <a href=""><span>가족 정보 보호</span><strong>우리 가족 개인정보를<br>보호할 수 있어요</strong></a>
+                        <a href=""><span>금융 사기 예방</span><strong>금융 사기를<br>예방해 드려요</strong></a>
+                    </div>
+                </div>
+                    <div class="dot"><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a></div>
+                    <button>소중한 내 정보 안전하게 케어받기</button>
+                </div>
+            </section>
+            <section id="under">
+                <h3>지키미가 <span>유익한 정보</span>를 알려드려요.
+                </h3>
+                <article class="informationWrap">
+                    <a><div class="information1"><p>신용조회 기록이 안남아요</p><strong>내가 받고싶<br>대출 금액은?</strong><input type="text" placeholder="금액입력"><span>만원</span><button type="button" class="btn base" id="check">확인</button>
+                    </div></a>
+                    <a href="#"><div class="information2"><p>무료신용조회</p><strong>나의 신용점수<br>무료로 조회해보세요</strong></div></a>
+                    <a href="#"><div class="information3"><p>개인/커플/사업자 신용보고서</p><strong>중요한 순간<br>나를 증명해야 할 때</strong></div></a>
+                    <a href="#"><div class="information4"><p>신용점수 예측하기</p><strong>미래의 내 신용점수는<br>몇 점일까?</strong></div></a>
+                    <a href="#"><div class="information5"><p>나에게 꼭 필요한 맞춤카드</p><strong>인기 카드를<br>확인해 보세요!</strong><img src="./img/newfolder/bg_card_default.png" alt="#"></div></a>
+                    <a href="#"><div class="information6"><p>맞춤 채무조정 솔루션</p><strong>과도한 채무나<br>연체가 있으신가요?</strong></div></a>
+                    <a href="#"><div class="information7"><p>메리프화재 보장분석</p><strong>숨어있던 보험내역<br>1분만에 확인하세요</strong></div></a>
+                </article>
+            </section>
+            <section id="bottom">
+                <h3>세상에 이런 혜택이</h3>
+                <div class="bottom-wrap">
+                    <a href="#"><div class="bottom-service1">
+                        <img src="./img/bottom/bg_mainBan_01.png" alt="#"><p>OK저축은행 신용대출</p><strong>내 대출한도가<br>도착했습니다!</strong>
+                    </div><div class="inside"><strong>지금<br>조회하기</strong></div></a>
+                    <a href="#"><div class="bottom-service2">
+                        <img src="./img/bottom/bg_mainBan_02.png" alt="#"><p>맞춤형 대출상품</p><strong>내 신용점수로<br>대출진단 받기</strong>
+                    </div>
+                    <div class="inside"><strong>신용까지<br>담보까지 진단</strong></div>
+                </a>
+                    <a href="#"><div class="bottom-service3">
+                        <img src="./img/bottom/bg_mainBan_03.png" alt="#"><p>맞춤형 카드상품</p><strong>내 신용에 맞는<br>퍼스널카드 찾기</strong>
+                    </div>
+                    <div class="inside"><strong>혜택좋은 카드<br>진단받기</strong></div>
+                </a>
+                    <a href="#"><div class="bottom-service4">
+                        <img src="./img/bottom/bg_mainBan_04.png" alt="#"><p>부동산 담보대출</p><strong>지금 가능한<br>최대 한도는?</strong>
+                    </div>
+                    <div class="inside"><strong>담보계산기로<br>예측하기</strong></div>
+                </a>
+                    <a href="#"><div class="bottom-service5">
+                        <img src="./img/bottom/bg_mainBan_05.png" alt="#"><p>보험혜택진단</p><strong>나에게 맞는<br>혜택 받기</strong>
+                    </div>
+                    <div class="inside"><strong>무료 보장분석부터<br>자동차보험 혜택까지</strong></div>
+                </a>
+                </div>
+            </section>
+<article class="notice-wrap">
+    <a href="#"><h3><img src="./img/bottom/pngegg.png" alt="1">알려드려요</h3></a>
+    <div class="notice-under-wrap">
+        <a href="#">
+            <p class="notice-title">신용점수 올리기 서비스 점검 작업 안내</p>
+        </a>
+        <a href="#">
+            <p class="date">2024.11.13</p>
+        </a></div>
+</article>
+    </main>
+    <footer>
+        <div class="footer-wrap">
+        <ul class="footerMenu">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#" >개인정보처리방침</a></li>
+            <li><a href="#" >이용약관</a></li>
+            <li><a href="#" >개인신용평점체계공시</a></li>
+            <li><a href="#" >저작권 정책</a></li>
+            <li><a href="#" >사이트맵</a></li>
+        </ul>
+        <div class="etcInfo">
+            <dl>
+                <div>
+                     <dd>NICE평가정보㈜</dd>
+                </div>
+                <div>
+                    <dd>서울특별시 영등포구 은행로 17 (여의도동 14-33)</dd>
+                </div>
+                <div>
+                    <dt>대표이사</dt>
+                    <dd>신희부</dd>
+                </div>
+                <div>
+                    <dt>사업자등록번호</dt>
+                    <dd>116-81-15020</dd>
+                </div>
+
+                <div>
+                    <dt>통신판매업신고</dt>
+                    <dd>2024-서울영등포-1095호</dd>
+                </div>
+            </dl>
+            <div class="copy">
+                COPYRIGHT© NICE INFORMATION SERVICE RESERVED.
+            </div>
+        </div>
+    </div>
+        <div class="foot-right">
+            <div><strong>고객센터</strong><p>1588-1588</p></div><a href="#">webmaster@credit.co.kr</a>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        centeredSlides: true,
+        loop: true,    
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+  
+      
+    </script>
+</body>
+
+</html>

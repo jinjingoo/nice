@@ -1,0 +1,1813 @@
+@charset "UTF-8";
+@import url(../css/reset.nice.css);
+:root {
+--background-color:#EFF2F8
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #222;
+    font-family: 'Noto Sans', Tahoma, Verdana, Geneva, sans-serif, Apple Gothic, AppleGothic;
+    font-size: 16px;
+    letter-spacing: -0.6px;
+    font-weight: normal;
+    line-height: normal;
+    word-wrap: break-word;
+    word-break: normal;
+
+}
+a {
+    color: #222;
+    text-decoration: none;
+font-weight: 500;
+}
+.headerGnb {
+    position: relative;
+    width: 1180px;
+    height: 140px;
+    padding-left: 225px;
+    margin: 0 auto;
+
+}
+.headerGnb .gnb {
+    padding-top: 48px;
+    
+}
+
+.headerGnb h1 a {
+    position: absolute;
+    width: 132px;
+    height: 21px;
+    left: 0;
+    top: 78px;
+    background: url(../img/nice_logo.png) no-repeat;
+    background-size: 100%;
+}
+.headerGnb .util {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.headerGnb .util a {
+    margin-left: 20px;
+    color: #444;
+}
+
+.gnb>ul>li {
+    float: left;
+
+}
+.gnb>ul>li>a {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin: 0 25px;
+    padding: 25px 0 41px;
+
+}
+.gnb>ul>li>a:hover, .headerGnb .gnb>ul>li>a:focus {
+    color: #066bfd;
+}
+.gnb .subMenu {
+    position: absolute;
+    display: flex;
+    top: 136px;
+    width: 100%;
+left: 0;
+
+
+    background-color: white;
+    z-index: 1000;
+    padding: 60px 0;
+    opacity: 0;
+    visibility: hidden;
+    border-top: 1px solid #066bfd;
+    border-bottom: 1px solid #333;
+} 
+.gnb ul li.menu1:hover .subMenu.menu1 {
+    opacity: 1;
+    visibility: visible;
+    transition-duration: .3s;
+    transition-delay: .3s;
+}
+.gnb ul li.menu2:hover .subMenu.menu2 {
+    opacity: 1;
+    visibility: visible;
+    transition-duration: .3s;
+    transition-delay: .3s;
+}
+.gnb ul li.menu3:hover .subMenu.menu3 {
+    opacity: 1;
+    visibility: visible;
+    transition-duration: .3s;
+    transition-delay: .3s;
+}
+.gnb ul li.menu4:hover .subMenu.menu4 {
+    opacity: 1;
+    visibility: visible;
+    transition-duration: .3s;
+    transition-delay: .3s;
+    
+}
+.gnb ul li.menu5:hover .subMenu.menu5 {
+    opacity: 1;
+    visibility: visible;
+    transition-duration: .3s;
+    transition-delay: .3s;
+}
+
+.gnb .subMenu .subMnList {
+    display: flex;
+    width: 1180px;
+    justify-content: center;
+    justify-content: space-around;
+}
+.highLightWrap, .highLightLine {
+    box-shadow: 0 -10px 0 rgba(67, 155, 255, 0.6);
+}
+.gnb .subMenu .subMnList .sec > strong {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0 0 16px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+.gnb .subMenu .subMnList .sec > strong.noLine {
+    margin-bottom: 13px;
+    border-bottom: 0;
+}
+
+.gnb .subMenu .subMnList .sec {
+    width: 204px;
+    margin-left: 40px;
+}
+
+
+.gnb .subMenu .subMnList .sec ul {
+    display: block;
+    margin-left: 0;
+}
+.gnb .subMenu .subMnList .sec > ul > li > a {
+    display: inline-block;
+    font-size: 18px;
+    white-space: nowrap;
+}
+.gnb .subMenu .subMnList .sec .subTit + ul > li a {
+    list-style:disc;
+    display: inline-block;
+    position: relative;
+    padding-left: 23px;
+    font-size: 16px;
+}
+.gnb .subMenu .subMnList .sec .subTit + ul > li a::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    line-height: 1;
+    left: 0;
+    background-color: #222;
+    color: black;
+    border: 1px solid black;
+}
+.headerGnb .headerSearch .btnSearch {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 25px;
+    height: 25px;
+}
+/* 메인 영역 */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    position: relative;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        width: 1080px;
+  background-repeat: no-repeat;
+  background-position: 70%;
+}
+
+.swiper-slide.first{
+    background-color: #fff7df;
+    background-image: url(../img/slide/pig.png);
+}
+.swiper-slide.second{
+    background-color: #ddfaff;
+    background-image: url(../img/slide/phone.png);
+    background-position: 70% 300%;
+}
+.swiper-slide.third{
+    background-color: #f0ebff;
+    background-image: url(../img/slide/rocket.png);
+}
+.swiper-slide.forth{
+    background-color: #e0fdf0;
+    background-image: url(../img/slide/sun.png);
+    
+}
+
+.mySwiper {
+    position: relative;
+    height: 390px;
+}
+.mySwiper h2, .mySwiper p {
+
+padding-left: 20%;
+margin-top: 10px;
+text-align: start;
+}
+.mySwiper h2 {
+    font-size: 2rem;
+    padding-top: 50px;
+}
+.mySwiper .swiper-pagination {
+    left: 50%;
+    bottom: 30px;
+    width: auto;
+    height: auto;
+    margin-left: -406px;
+    padding: 0 8px 2px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;  
+    background-color: #dbdbdb;
+}
+
+
+/* 중단 영역 */
+section#middle {
+
+    display: flex;
+    flex-direction: column;
+    width: 1180px;
+    margin: 0 auto;
+}
+
+section#middle h3 {
+    display: block;
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 30px;
+    width: 1180px;
+}
+
+section#middle .serviceWrap ul {
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 124px;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+}
+section#middle .serviceWrap ul li {
+    margin-top: 10px;
+}
+
+section#middle .serviceWrap ul div {
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    border-radius: 20px;
+    background-color: #eeeeee;
+    background-position: 50% 50%;
+}
+section#middle .serviceWrap ul .service1 {
+    background-image: url(../img/service1.png);
+}
+section#middle .serviceWrap ul .service2 {
+    background-image: url(../img/service2.png);
+}
+section#middle .serviceWrap ul .service3 {
+    background-image: url(../img/service3.png);
+}
+section#middle .serviceWrap ul .service4 {
+    background-image: url(../img/service4.png);
+}
+section#middle .serviceWrap ul .service5 {
+    background-image: url(../img/service5.png);
+}
+section#middle .serviceWrap ul .service6 {
+    background-image: url(../img/service6.png);
+}
+section#middle .serviceWrap ul .service7 {
+    background-image: url(../img/service7.png);
+}
+section#middle .serviceWrap ul .service8 {
+    background-image: url(../img/service8.png);
+}
+section#middle .middlebar {
+    display: flex;
+ align-items: center;
+    width: 1180px;
+    height: 136px;
+    gap : 20px;
+    margin-top: 30px;
+}
+
+section#middle .mid-bar-left {
+    background-color: #f0ebff;
+
+    position: flex;
+    width: 780px;
+    height: 121px;
+    border-radius: 20px;
+    float: left;
+}
+section#middle .mid-bar-left div {
+
+    background-image: url(../img/my-loan.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+section#middle .mid-bar-left p {
+display: flex;
+float: left;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        padding:43px 200px 42px 40px;
+}
+
+section#middle .mid-bar-right {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 360px;
+    gap: 5px;
+    background-image: url(../img/ok_new_banner.png);
+    background-size: 94px 94px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+section#middle .mid-bar-right strong {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+section#middle .mid-bar-right .dot a {
+    display: block;
+    content: '';
+    border: 1px solid black;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    float: left;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+section#middle .careWrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1180px;
+    height: 488px;
+    margin-top: 60px;
+    background-color: var(--background-color);    padding: 50px 150px 50px 200px;
+    border-radius: 20px;
+}
+section#middle .careWrap h3 {
+    font-size: 28px;
+    float: left;
+    width: 151px;
+}
+section#middle .careWrap h3 span {
+    color: #066bfd;
+}
+
+section#middle .careWrap .care-items-wrap a {
+    display: block;
+    width: 208px;
+    height: 260px;
+    background-color: rgb(255, 255, 255);
+    float: right;
+    margin: 20px 5px 0 5px;
+    padding: 140px 14px 14px 14px;
+    align-items: center;
+    text-align: center;
+    
+    background-image: url(../img/slide/pig.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+section#middle .careWrap .care-items-wrap a:hover {
+    background-position: 50% 7%;
+}
+
+section#middle .careWrap .care-items-wrap a span {
+    color: #066bfd;
+    display: block;
+    font-size: 14px;
+    margin: 10px;
+}
+section#middle .careWrap .dot {
+    margin: 20px auto;
+    width: 104px;
+    height: 7px;
+   display: flex;
+   justify-content: space-between;   
+}
+section#middle .careWrap .dot a {
+    display: block;
+    bottom: 10%;
+    content: '';
+    border: 1px solid black;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    float: left;
+}
+section#middle .careWrap button {
+    width: 394px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 54px;
+    background-color: #066bfd;
+    border: 1px solid #066bfd;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+section#under {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+section#under h3 {
+    font-size: 24px;
+    margin: 0 0 30px;
+}
+section#under h3 span {
+    color: #066bfd;
+}
+section#under strong {
+    font-size: 23px;
+    font-weight: bold;
+}
+section#under .informationWrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    overflow: visible;
+}
+section#under .informationWrap a div {
+    width: 380px;
+    height: 230px;
+    margin-top: 20px;
+    background-color: var(--background-color);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 120px;
+    border-radius: 20px;
+    padding: 25px 25px 80px;
+}
+section#under .informationWrap a div.information1 {
+    padding: 25px 25px 20px;
+    display: flex;
+justify-content: space-between;
+flex-direction: column;
+background-color: #222;
+color: white;
+}
+section#under .informationWrap a div.information1 p {
+    color: #8d8d8d;
+}
+
+section#under .informationWrap a div.information5 {
+    width: 780px;
+    color: white;
+    background: linear-gradient(to top, #481175, #9d25ff)
+}
+section#under .informationWrap a div.information5 img {
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    right: 0;
+    top: 35%;
+
+}
+section#under .informationWrap a div.information2 {
+    background-image: url(../img/newfolder/bg_free.png);
+    }
+section#under .informationWrap a div.information7 {
+    background-image: url(../img/newfolder/bg_meritz_241113.png);
+    }
+section#under .informationWrap a div.information6 {
+    background-image: url(../img/newfolder/bg_arrears.png);
+    }
+section#under .informationWrap a div.information4 {
+    background-image: url(../img/newfolder//bg_predict.png);}
+section#under .informationWrap a div.information3 {
+background-image: url(../img/newfolder/bg_proof.png);
+}
+section#under .informationWrap a div.information6 {
+    width: 580px;
+}section#under .informationWrap a div.information7 {
+    width: 580px;
+}
+section#under .informationWrap a div p {
+    margin-bottom: 8px;
+    }
+section#under .informationWrap a div.information1 strong {
+    margin-bottom: 20px;
+    }
+section#under .informationWrap a div input {
+    display: flex;
+width: 330px;
+height: 60px;
+border-radius: 10px;
+padding-left: 60px;
+padding-right: 115px;
+text-align: right;
+background-image: url(../img/ico_coin.png);
+background-size: 35px;
+background-repeat: no-repeat;
+background-position: 5% 50%;
+}
+
+section#under .informationWrap a div.information1 span {
+    position: absolute;
+    top: 188px;
+left: 243px;
+color: black;
+}
+section#under .informationWrap a div.information1 button {
+    position: absolute;
+top: 181px;
+left: 280px;
+border-radius: 8px;
+
+width: 60px;
+height: 36px;
+background-color: #dadada;
+}
+
+section#bottom {
+    width: 1180px;
+    margin: 0 auto;
+
+}
+section#bottom h3 {
+    font-size: 24px;
+    margin: 0 0 30px;
+}
+section#bottom .bottom-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+section#bottom .bottom-wrap a {
+    position: relative;
+}
+section#bottom .bottom-wrap div {
+    position: relative;
+text-align: center;
+    width: 220px;
+    height: 250px;
+    border-radius: 10px;
+}
+section#bottom .bottom-wrap div p {
+    margin: 10px 0;
+}
+section#bottom .bottom-wrap div strong {
+    font-size: 23px;
+    font-weight: bold;
+}
+section#bottom .bottom-wrap .inside {
+    position: absolute;
+    display: flex;
+    top: 0;
+    background-color: #066bfd;
+    transform: rotateX(90deg);
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+section#bottom .bottom-wrap .inside strong {
+    font-size: 22px;
+}
+section#bottom .bottom-wrap .bottom-service1 {
+    background-color: rgb(236, 204, 165);
+}
+section#bottom .bottom-wrap .bottom-service2 {
+    background-color: rgb(210, 165, 236);
+}section#bottom .bottom-wrap .bottom-service3 {
+    background-color: rgb(237, 176, 243);
+}section#bottom .bottom-wrap .bottom-service4 {
+    background-color: rgb(176, 229, 238);
+}section#bottom .bottom-wrap .bottom-service5 {
+    background-color: rgb(240, 200, 252);
+}
+
+section#bottom .bottom-wrap a:hover > div {
+    transform: rotateX(-90deg);
+    transition: .15s ease;
+}
+section#bottom .bottom-wrap a:hover .inside {
+
+    transform: rotateX(0deg);
+    transition-delay: 0.15s;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+}
+article.notice-wrap {
+    position: relative;
+    display: flex;
+    width: 1180px;
+    justify-content: space-between;
+    margin: 48px auto 120px auto;
+}
+article.notice-wrap h3 {
+    font-size: 24px;
+    width: 180px;
+}
+article.notice-wrap img {
+    width: 35px;
+    height: 35px;
+}
+article.notice-wrap .notice-under-wrap {
+display: flex;
+    justify-content: space-between;
+    width: 939px;
+    height: 30px;
+    align-items: center;
+}
+article.notice-wrap .notice-under-wrap p {
+    float: left;
+}
+article.notice-wrap .notice-under-wrap .notice-title {
+    font-weight: bold;
+}
+article.notice-wrap .notice-under-wrap .date {
+    color: #8d8d8d;
+}
+footer {
+    width: 1180px;
+
+    margin: 0 auto;
+    border-top: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+footer .footer-wrap {
+    width: 80%;
+}
+footer .footerMenu {
+    position: relative;
+    display: flex;
+    width: 80%;
+    padding-top: 44px;
+    
+}
+footer .footerMenu li:not(:first-child) {
+margin-left: 28px;
+margin-bottom: 28px;
+}
+.etcInfo {
+    width: 50%;
+    margin-top: -14px;
+    color: #767676;
+    font-size: 15px;
+
+}
+.etcInfo dl {
+    width: 590px;
+    height: 57px;
+}
+.etcInfo dl div {
+display: flex;
+justify-content: space-between;
+float: left;
+margin: 2px 12px 2px 0;
+align-items: center;
+}
+.etcInfo div dt {
+    float: left;
+}
+
+footer .foot-right {
+    position: relative;
+    display: block;
+width: 20%;
+float: right;
+padding-top: 37px;
+justify-content: space-between;
+background-image: url(../img/footer/footer_a11y.png);
+background-repeat: no-repeat;
+background-size: 60px 41px;
+background-position: 100% 100%;
+}
+footer .foot-right strong {
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+}
+footer .foot-right p {
+    display: flex;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+}
+footer .foot-right a {
+    float: right;
+}
+
+.subpage-upper {
+    width: 1180px;
+    height: 60px;
+    background-color: white;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    padding: 18px 0px;
+    margin: 0 auto;
+}
+.subpage-upper.fixed {
+    position: fixed;
+    background-color: #066bfd;
+    color: white;
+    width: 100%;
+    padding-left: 20px;
+    top:0;
+    z-index: 10000;
+}
+.subpage-upper a {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/creditlife/ico_home.png);
+    background-size: 24px;
+    float: left;
+}
+.subpage-upper p {
+    float: left;
+
+}
+.subpage-upper p::before{
+display: inline-block;
+    content: '';
+    width: 3px;
+    height: 3px;
+    background: #dcdff1;
+    border-radius: 50%;
+    margin: 0px 9px 5px 7px;
+}
+
+
+
+/* creditlife css */
+
+main#credit-life {
+width: 800px;
+margin: 0 auto 200px;
+padding: 70px 0 120px 0;
+}
+main#credit-life article#upper-wrap-credit {
+position: relative;
+text-align: center;
+}
+main#credit-life article#upper-wrap-credit h2 {
+    font-size: 32px;
+    line-height: 42px;
+}
+main#credit-life article#upper-wrap-credit p {
+font-size: 18px;
+line-height: 28px;
+margin-bottom: 15px;
+}
+main#credit-life article#upper-wrap-credit p span {
+    color: #066bfd;
+}
+main#credit-life article#upper-wrap-credit a {
+    color: #0050c0;
+    background-color: #d3e4fc;
+
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 14px;
+    margin-right: 3px;
+}
+
+main#credit-life article#second-wrap-credit {
+    
+    display: block;
+    padding: 65px 0 0 0;
+    margin: 65px 0 0 0;
+    border-top: 10px solid rgb(235, 235, 235);
+}
+main#credit-life article#second-wrap-credit h3 {
+    margin-bottom: 11px;
+    font-size: 25px;
+    color: #066bfd;
+    font-weight: 800;
+}
+main#credit-life article#second-wrap-credit strong {
+    font-size: 18px;
+    font-weight: 700;
+}
+main#credit-life article#second-wrap-credit .soho-wrap {
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    border-radius: 15px;
+    padding: 35px 0 40px 0;
+    margin-top: 40px;
+    border-radius: 20px;
+    width: 800px;
+    height: 325px;
+    overflow: hidden;
+    background-image: url(../img/creditlife/bg_credit01.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 228px 176px;
+    flex-direction: column;
+
+}
+main#credit-life article#second-wrap-credit .soho-wrap p {
+    position: relative;
+left: 40px;
+}
+main#credit-life article#second-wrap-credit .soho-wrap p span {
+    color: #066bfd;
+}
+main#credit-life article#second-wrap-credit .soho-wrap .soho-box-wrap {
+    position: relative;
+    display: block;
+    width: 800px;
+    height: 100px;
+
+    text-align: center;
+    flex-direction: row;
+}
+main#credit-life article#second-wrap-credit .soho-wrap .soho-box {
+    position: relative;
+    display: inline-flex;
+    width: 50px;
+    height: 62px;
+    line-height: 62px;
+    border-radius: 7px;
+
+    background-color: white;
+    filter: drop-shadow( 0px 0px 3px rgba(0,0,0,.3));
+
+}
+main#credit-life article#second-wrap-credit .soho-wrap .soho-box:not(:first-of-type) {
+margin-left: 8px;}
+
+main#credit-life article#second-wrap-credit .soho-wrap .soho-box strong {
+    display: flex;
+    margin: 0 auto;
+}
+main#credit-life article#second-wrap-credit .soho-wrap .page-nation-wrap {
+    position: relative;
+display: flex;
+justify-content: space-between;
+width: 50px;
+margin: 0 auto;
+}
+main#credit-life article#second-wrap-credit .soho-wrap .page-nation {
+    position: relative;
+display: flex;
+    width: 7px;
+height: 7px;
+margin-top: 30px;
+background-color: #333;
+border-radius: 50%;
+}
+main#credit-life article#second-wrap-credit button {
+height: 60px;
+    width: 800px;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+main#credit-life article#third-wrap-credit {
+    
+    display: block;
+    padding: 65px 0 0 0;
+    margin: 65px 0 0 0;
+    border-top: 10px solid rgb(235, 235, 235);
+}
+main#credit-life article#third-wrap-credit h3 {
+    margin-bottom: 11px;
+    font-size: 25px;
+    color: #066bfd;
+    font-weight: 800;
+}
+main#credit-life article#third-wrap-credit strong {
+    font-size: 18px;
+    font-weight: 700;
+}
+main#credit-life article#third-wrap-credit > p {
+    margin-top: 20px;
+    font-weight: 500;
+}
+main#credit-life article#third-wrap-credit .image-wrap {
+    display: flex;
+    margin-top: 65px;
+align-items: center;
+justify-content: center;
+}
+main#credit-life article#third-wrap-credit .image-wrap > div {
+    width: 136px;
+    height: 136px;
+
+    margin: 0 10px;
+}
+
+main#credit-life article#third-wrap-credit .image-wrap p {
+    text-align: center;
+    margin-top: 10px;
+}
+main#credit-life article#third-wrap-credit .image-wrap .card-img {
+    width: 136px;
+    height: 136px;
+    background-color: #cfcfcf;
+    border-radius: 50%;
+    background-size: 80px;  
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(../img/creditlife/manage/bg_card.png);
+}
+main#credit-life article#third-wrap-credit .image-wrap .loan-img {
+    width: 136px;
+    height: 136px;
+    background-color: #cfcfcf;
+    border-radius: 50%;
+    background-size: 80px;  
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(../img/creditlife/manage/bg_loan.png);
+}
+main#credit-life article#third-wrap-credit .image-wrap .delay-img {
+    width: 136px;
+    height: 136px;
+    background-color: #cfcfcf;
+    border-radius: 50%;
+    background-size: 80px;  
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(../img/creditlife/manage/bg_overdue.png);
+}
+main#credit-life article#last-wrap-credit {
+    
+    display: block;
+    padding: 65px 0 0 0;
+    margin: 85px 0 0 0;
+    border-top: 10px solid rgb(235, 235, 235);
+}
+main#credit-life article#last-wrap-credit strong {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+main#credit-life article#last-wrap-credit p {
+    position: relative;
+    margin: 0 0 25px 15px;
+    display: inline-block;
+    height: 35px;
+    padding: 0 17px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 6px;
+    background-color: #2d3553;
+    box-shadow: 8px 5px 10px rgba(0, 0, 0, .1);
+}
+main#credit-life article#last-wrap-credit p::after {
+    position: absolute;
+    content: '';
+    left: 25px;
+    top: 31px;
+    width: 7px;
+    height: 7px;
+    background-color: #2d3553;
+    transform: rotate(45deg);
+}
+
+main#credit-life article#last-wrap-credit a {
+    position: relative;
+    display: block;
+    padding: 4px 0 24px 80px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+main#credit-life article#last-wrap-credit a::after {
+    content: '';
+
+float: right;
+height: 10px;
+width: 10px;
+border-top: 1px solid rgb(0, 0, 0);
+border-right: 1px solid black;
+transform: rotate(45deg);
+}
+
+main#credit-life article#last-wrap-credit a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 68px;
+    height: 78px;
+    background: url(../img/creditlife/bg_male_s.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+main#credit-life > button {
+    position: absolute;
+    width: 800px;
+    height: 110px;
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 80px;
+    line-height: 110px;
+    padding: 0 40px;
+    color: white;
+}
+main#credit-life > button p {
+background-color: #066bfd;
+}
+main#credit-life > button.fixed {
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    
+}
+
+
+
+/* 고객센터 공지사항 */
+
+main#cs-notice {
+    width: 800px;
+    padding: 70px 0 120px 0;
+    margin: 0 auto;
+}
+main#cs-notice h2 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 900;
+}
+main#cs-notice .search-bar {
+    position: relative;
+    display: block;
+    width: 800px;
+    margin-top: 65px;
+}
+main#cs-notice .search-bar input {
+    height: 60px;
+    font-size: 18px;
+    padding: 0 20px;
+    width: 800px;
+    border: 1px solid rgba(0,0,0,.3);
+}
+main#cs-notice .search-bar button {
+    position: absolute;
+    background-image: url(../img/ico_header_search.png);
+    width: 58px;
+    height: 58px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    background-position: 50%;
+}
+
+main#cs-notice #notice-list {
+    margin-top: 50px;
+}
+main#cs-notice #notice-list span {
+    display: flex;
+    justify-content: right;
+    font-size: 16px;
+    font-weight: 700;
+    color: #767676;
+}
+main#cs-notice #notice-list .notice {
+    position: relative;
+    display: block;
+    height: 107px;
+    width: 800px;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    padding: 26px 50px 26px 8px;
+}
+
+main#cs-notice #notice-list .notice a:after {
+    content: '';
+    position: absolute;
+display: block;
+    top: 50%;
+    right: 0;
+    margin-top: -1px;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #222;
+    border-right: 1px solid #222;
+    transform: rotate(45deg);
+    
+}
+
+main#cs-notice #notice-list .notice:first-of-type{
+    border-top: 1px solid rgba(0,0,0,.3);
+}
+main#cs-notice #notice-list a strong {
+    font-size: 18px;
+    font-weight: 700;
+}
+main#cs-notice #notice-list a p {
+    margin-top: 5px;
+    color: #767676;
+}
+
+
+
+
+main#credit-care {
+    width: 800px;
+    margin: 0 auto 200px;
+    padding: 70px 0 120px 0;
+    }
+    main#credit-care article#upper-wrap-credit {
+    position: relative;
+    text-align: center;
+    }
+    main#credit-care article#upper-wrap-credit h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    main#credit-care article#upper-wrap-credit p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    }
+    main#credit-care .img1 {
+        width: 800px;
+        height: 571px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-image: url(../img/creditcare/bg_recovery01.jpg);
+    }
+    main#credit-care .img2 {
+        width: 800px;
+        height: 450px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-image: url(../img/creditcare/bg_recovery02.jpg);
+    }
+    main#credit-care > a {
+        position: relative;
+float: right;
+font-size: 18px;
+border-bottom: 1px solid black;
+    }
+    main#credit-care > a p {
+        float: left;
+    }
+    main#credit-care > a img {
+        float: right;
+        width: 8px;
+        height: 14px;
+        margin-left: 5px;
+        margin-top: 7px;
+    }
+    main#credit-care #middle-wrap-credit {
+        width: 800px;
+        border-top: 1px solid rgba(0,0,0,.3);
+        margin-top: 65px;
+        padding-top: 60px;
+    }
+
+
+
+    main#credit-care > button {
+        position: absolute;
+        width: 800px;
+        height: 60px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 80px;
+        line-height: 60px;
+        padding: 0 40px;
+        color: white;
+    }
+    main#credit-care > button p {
+    background-color: #066bfd;
+    
+    }
+    main#credit-care > button.fixed {
+        position: fixed;
+        z-index: 1000;
+        bottom: 0;
+        
+    }
+
+    /* 로그인 페이지 */
+
+    #login-main {
+display: flex;
+        width: 600px;
+        padding: 0 100px;
+        margin: 0 auto;
+    }
+    #login-main .id-wrap {
+        position: relative;
+        display: flex;
+flex-direction: column;
+        padding: 70px 0 120px;
+    }
+    #login-main input {
+        border: 1px solid black;
+        height: 60px;
+        font-size: 18px;
+        padding: 0 20px;
+        margin-bottom: 40px;
+    }
+    #login-main input:last-of-type {
+background-size: 30px;
+background-repeat: no-repeat;
+background-position: 97% 50%;
+background-image: url(../img/login/ico_keypad.png);
+    }
+    #login-main label {
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-weight: 500;
+    }
+#login-main .id-wrap .finding {
+        display: flex;
+        justify-content: right;
+        font-size: 18px;
+        line-height: 26px;
+}
+#login-main .id-wrap .finding a {
+    border-bottom: 1px solid black;
+}
+
+#login-main .id-wrap .btn-wrap-login button {
+    height: 66px;
+    font-size: 20px;
+    padding: 0 40px;
+    line-height: 64px;
+    width: 600px;
+    font-weight: 700;
+    border: 1px solid rgb(179, 179, 179);
+    text-align: center;
+    border-radius: 10px;
+}
+#login-main .id-wrap .btn-wrap-login button:first-of-type {
+    background-color: #066bfd;
+    color: white;
+    border: #066bfd;
+    margin: 40px 0;
+}
+#login-main .id-wrap .btn-wrap-login p {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid gray;
+    font-weight: 500;
+    font-size: 18px;
+}
+#login-main .id-wrap .btn-wrap-login p span {
+    color: #066bfd;
+}
+
+#login-main .id-wrap .login-other-wrap {
+margin: 120px auto;
+}
+
+#login-main .id-wrap .login-other-wrap div {
+    display: inline-block;
+    width: 92px;
+    text-align: center;
+    align-items: center;
+}
+#login-main .id-wrap .login-other-wrap div p {
+
+    margin-top: 10px;
+    font-size: 15px;
+}
+#login-main .id-wrap .login-other-wrap div div {
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: 50%;
+}
+#login-main .id-wrap .login-other-wrap .login-other1 {
+    background-image: url(../img/login/ico_naver.png);
+}
+#login-main .id-wrap .login-other-wrap .login-other2 {
+    background-image: url(../img/login/ico_kakao.png);
+}
+#login-main .id-wrap .login-other-wrap .login-other3 {
+    background-image: url(../img/login/ico_loginPublic.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 50%;
+}
+#login-main .bottom-wrap-login strong {
+font-size: 26px;
+font-weight: 700;
+margin-bottom: 3px;
+}
+#login-main .bottom-wrap-login p {
+font-size: 16px;
+    line-height: 26px;
+    margin-top: 5px;
+}
+
+#login-main .bottom-wrap-login {
+    width: 600px;
+    margin: 0 auto;
+    background-image: url(../img/ok_new_banner.png);
+    background-position: 95% 50%;
+    background-size: 15%;
+    background-repeat: no-repeat;
+    border-top: 10px solid #f9f9f9;
+    padding-top: 45px;
+}
+#login-main .bottom-wrap-login .login-page-nation div {
+
+    display: flex;
+    float: left;
+    width: 5px;
+    height: 5px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 30px 5px 0;
+}
+
+/* 회원가입 newaccount */
+
+#new-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 0 120px 0;
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+#new-account h2 {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 50px;
+}
+#new-account h2 span {
+color: #066bfd;
+}
+#new-account .NAtitle {
+    display: flex;
+font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+#new-account select {
+    display: flex;
+    width: 800px;
+    height: 60px;
+    border: 1px solid #767676;
+    font-size: 18px;
+    padding: 0 35px 0 10px;
+    background: url(../img/newaccount/ico_acco_arr.png) no-repeat 98% 13px;
+    background-size: 24px;
+    color: #222;
+    font-weight: 500;
+    padding: 0 60px 0 20px;
+    background-position: calc(100% - 19px) 15px;
+    background-size: 28px;
+}
+#new-account input {
+    display: flex;
+    width: 800px;
+    height: 60px;
+    border: 1px solid #767676;
+    font-size: 18px;
+    padding: 0 35px 0 10px;
+    color: #222;
+    padding: 0 60px 0 20px;
+    font-weight: 700;
+}
+#new-account .check {
+    width: 100%;
+    display: flex;
+    margin: 50px 0 10px;
+    flex-direction: column;
+}
+#new-account .check label {
+    position: relative;
+    display: flex;
+    line-height: 28px;
+    left: 0;
+}
+#new-account .check .checkList {
+    padding: 16px;
+}
+#new-account .check label:before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    border: 3px solid gray;
+    border-radius: 50%;
+    background-image: url(../img/newaccount/ico_check.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 5px;
+}
+#new-account .check input:checked + label:before {
+    background-color: #066bfd;
+    background-image: url(../img/newaccount/ico_checked.png);
+    border-color: #066bfd;
+}
+#new-account .check input:checked + label {
+    font-weight: 700;
+}
+#new-account .check .check-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#new-account .check .all {
+    border-bottom: 1px solid rgb(218, 218, 218);
+    padding-bottom: 30px;
+}
+#new-account .check input {
+    display: none;
+}
+#new-account .SSN {
+    width: 387.5px;
+}
+#new-account .SSN2 {
+    width: 60px;
+    padding: 10px 20px;
+    text-align: center;
+}
+#new-account .social-security-number {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    align-items: center;
+}
+#new-account .social-security-number img {
+    margin-right: 100px;
+}
+#new-account .phoneNumber {
+    width: 632px;
+}
+#new-account .phone-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+#new-account .phone-wrap button {
+height: 60px;
+width: 158px;
+    font-size: 18px;
+    line-height: 58px;
+    font-weight: 700;
+    color: #222;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #444;
+    margin-bottom: 10px;
+}
+#new-account .completeBtn {
+    display: inline-block;
+    color: #fff;
+    font-weight: 900;
+    background-color: #066bfd;
+    border: 1px solid #066bfd;
+    height: 66px;
+    width: 220px;
+    font-size: 20px;
+    padding: 0 40px;
+    line-height: 64px;
+    text-align: center;
+    border-radius: 10px;
+}
+#new-account .otherWay {
+    display: inline-block;
+
+    margin: 70px auto 110px;
+    border-bottom: 1px solid #222;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+
+/*신용보고서*/
+main#credit-report {
+    width: 800px;
+    margin: 0 auto 200px;
+    padding: 70px 0 120px 0;
+    }
+    main#credit-report article#upper-wrap-credit {
+    position: relative;
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: 10px solid rgb(233, 233, 233);
+    }
+    main#credit-report article#upper-wrap-credit h2 {
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: -3px;
+        font-weight: 700;
+        margin: 60px auto;
+    }
+    main#credit-report article#upper-wrap-credit p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    }
+    main#credit-report article#upper-wrap-credit p span {
+        color: #066bfd;
+    }
+   .repBgBox::before, .pweb .repBgBox .iconRep {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        width: 210px;
+        height: 210px;
+        background-size: 100%;
+    }
+    main#credit-report h3 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+
+    .tabList {
+        display: flex
+        ;
+        width: 100%;
+        background-color: #f9f9f9;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        justify-content: flex-start;
+    }
+    .tabList li.active {
+        background-color: #fff;
+    }
+    .tabList li.active:after {
+        position: absolute;
+        content: '';
+        top: -1px;
+        left: -1px;
+        right: -1px;
+        bottom: -1px;
+        border: 2px solid #066bfd;
+        border-radius: 10px;
+        z-index: 2;
+    }
+    .tabList li.active a {
+        color: #066bfd;
+    }
+    .tabList li {
+        position: relative;
+        flex: 1;
+        box-sizing: border-box;
+    }
+    .tabList li a {
+        display: flex
+        ;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        padding: 14px 0;
+        color: #727272;
+        position: relative;
+        font-size: 18px;
+        line-height: 30px;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+    .tabList li:not(:first-child):before {
+        position: absolute;
+        content: '';
+        left: -1px;
+        top: 50%;
+        margin-top: -7px;
+        height: 14px;
+        border-left: 1px solid #d4d4d4;
+        z-index: 1;
+    }
+    .tabList.btm {
+        margin-bottom: 40px;
+    }
+    main#credit-report > button {
+        position: absolute;
+        width: 800px;
+        height: 110px;
+        font-size: 34px;
+        font-weight: 700;
+        margin-top: 80px;
+        line-height: 110px;
+        padding: 0 40px;
+        color: white;
+    }
+    main#credit-report > button p {
+    background-color: #066bfd;
+    }
+    main#credit-report > button.fixed {
+        position: fixed;
+        z-index: 1000;
+        bottom: 0;
+        
+    }
+    .repBgBox {
+        position: relative;
+        width: 800;
+        margin: 120px 0;
+padding: 20px 0;
+    }
+    .contSubExp {
+        display: block;
+        font-size: 15px;
+    font-weight: bold;
+    width: 500px;
+    margin-top: 10px;
+    }
+    .iconRep {
+position: absolute;
+        display: flex;
+
+        width: 210px;
+        height: 210px;
+right: 0;
+top: 0;
+    }
+    .iconRep.mob.isIn div {
+        position: relative;
+        display: flex;
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+width: 210px;
+height: 210px;
+    }
+
+    .innerPhone {
+
+        background-image: url(../img/credit_report/first/bg_rp_item01_1_phone.png);
+    }
+    .innerWallet {
+
+        background-image: url(../img/credit_report/first/bg_rp_item01_1_wallet.png);
+    }
+    .innerCarrot {
+
+        background-image: url(../img/credit_report/first/bg_rp_item01_1_carrot.png);
+    }
+    .innerAirplane{
+        background-image: url(../img/credit_report/second/bg_rp_item01_1_phone.png);
+    }
+    .innerFlag1 {
+        background-image: url(../img/credit_report/second/bg_rp_item01_2_flag1.png);
+        z-index: 1;
+    }
+    .innerFlag2 {
+        background-image: url(../img/credit_report/second/bg_rp_item01_2_flag2.png);
+    }
+    .innerBlink {
+        background-image: url(../img/credit_report/third/bg_rp_item01_3_blink.png);
+    }
+    .innerHand {
+        background-image: url(../img/credit_report/third/bg_rp_item01_3_hand.png);
+    }
+
+    .what-info {
+        position: relative;
+        display: flex;
+        background-color: #e6e6e6;
+        font-size: 18px;
+        width: 800px;
+padding: 30px;
+line-height: 30px;
+border-radius: 20px;
+    }
+    .what-info img {
+        position: absolute;
+        width: 10px;
+        height: 20px;
+        display: flex;
+        float: right;
+        right: 30px;
+        top: 40%;
+    }
+
+    main#credit-report #rep-under-wrap {
+        position: relative;
+        display: flex;
+        width: 800px;
+        padding: 65px 0 0 0;
+    margin: 65px 0 0 0;
+    flex-direction: column;
+    border-top: 10px solid gainsboro;
+    }
+    main#credit-report #rep-under-wrap h3 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    main#credit-report #rep-under-wrap .box-wrap {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    main#credit-report #rep-under-wrap .box-wrap .rep-under-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 382px;
+        height: 382px;
+        text-align: center;
+        border: 1px solid gray;
+        border-radius: 20px;
+        overflow: hidden;
+
+        background-repeat: no-repeat;
+        background-position: 50% 7%;
+        background-size: 65px;
+    }
+    main#credit-report #rep-under-wrap .box-wrap .rep-under-box .upper-inside{
+        padding-top: 115px;
+        height: 268px;
+    }
+    main#credit-report #rep-under-wrap .box-wrap .rep-under-box .upper-inside p {
+        font-weight: 700;
+    padding-bottom: 20px;
+    line-height: 26px;
+    font-size: 18px;
+    }
+    main#credit-report #rep-under-wrap .box-wrap .rep-under-box .upper-inside p span{
+    color: #066bfd;}
+    main#credit-report #rep-under-wrap .box-wrap .rep-under-box .upper-inside .small {
+        font-size: 15px;
+        color: #727272;
+    }
+    main#credit-report #rep-under-wrap .box-wrap .rep-under-box .upper-inside .small span{
+    color: black;}
+    main#credit-report #rep-under-wrap .box-wrap .rep-under-box .under-inside{
+        padding: 25px;
+        bottom: 0;
+        background-color: #cacaca;
+        text-align: start;
+    }
+    main#credit-report #rep-under-wrap .box-wrap .rep-under-box .under-inside p{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    main#credit-report #rep-under-wrap .box-wrap .rep-under-box .under-inside p.else {
+font-weight: 400;
+    }
+    main#credit-report #rep-under-wrap .box-wrap .rep-under-box:first-of-type{
+        background-image: url(../img/credit_report/ico_folder.png);
+    }
+    main#credit-report #rep-under-wrap .box-wrap .rep-under-box:last-of-type{
+        background-image: url(../img/credit_report/ico_email.png);
+    }
